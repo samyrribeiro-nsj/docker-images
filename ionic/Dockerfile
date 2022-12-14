@@ -1,4 +1,4 @@
-FROM openjdk:19-alpine
+FROM openjdk:16-alpine
 
 LABEL maintainer="Devops Nasajon <devops@nasajon.com.br>"
 
@@ -8,7 +8,7 @@ ENV BUILD_TOOLS 32.0.0
 ENV TARGET_SDK 32
 ENV GRADLE_VERSION 7.6
 
-ENV JAVA_HOME /opt/openjdk-19
+ENV JAVA_HOME /opt/openjdk-16
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK_ROOT /opt/android-sdk-linux
 ENV GRADLE_HOME /opt/gradle-${GRADLE_VERSION}
